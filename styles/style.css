@@ -1,0 +1,77 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+body{
+    background-color: #F5F5F5;
+    animation-name: colorBackground;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 20s;
+    animation-delay: 0s;
+
+}
+.container-topic{
+    max-width: 1000px;
+    margin-top: 120px;
+    transition: .3s;
+}
+.container-topic:hover{
+    scale: 1.01;
+    box-shadow: 0 1px 30px rgb(0 0 0 / 10%);
+}
+@media (max-width: 768px) {
+    .container-topic{
+        margin-top: 0;
+    }
+  }
+.topic{
+    height: 400px;
+    overflow: hidden;
+}
+.topic__img{
+    width: 100%;
+    object-fit: cover;
+}
+.max__cmil{
+    max-width: 1000px;
+}
+.card{
+    border: none;
+    border-radius: 0;
+    transition: .3s ;
+}
+.card:hover{
+    scale: 1.05;
+}
+.color-cha{
+    animation-name: colorChangue;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+@keyframes colorChangue{
+    0%{
+        color: #000;
+    }
+    50%{
+        color: #229954;
+    }
+    100%{
+        color: #000;
+    }
+}
+@keyframes colorBackground{
+    0%{
+        background-color: rgb(255, 255, 255);
+    }
+    50%{
+        background-color: #9fb9aa;
+    }
+    100%{
+        background-color: rgb(255, 255, 255);
+    }
+}
